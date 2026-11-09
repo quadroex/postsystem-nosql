@@ -1,0 +1,4 @@
+PASS initial counts, timeline, latest scan and recent branch results
+PASS missing shipment, unknown branch, invalid append and stale revision checks
+PASS one valid append and one winner among two concurrent appends
+PASS post-write event counts, timeline, latest scan and recent branch results

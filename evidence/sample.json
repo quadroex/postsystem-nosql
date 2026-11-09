@@ -1,0 +1,498 @@
+{
+  "checkedUtc": "2026-11-09T06:43:43.4582808Z",
+  "shipmentId": 1,
+  "branchId": 3,
+  "equivalent": true,
+  "samples": [
+    {
+      "engine": "PostgreSQL",
+      "store": {
+        "version": "18.2 (Debian 18.2-1.pgdg13\u002B1)",
+        "shipments": 100000,
+        "events": 1404449,
+        "bytes": 132579328,
+        "durability": "fsync=on; synchronous_commit=on"
+      },
+      "timeline": {
+        "id": 1,
+        "lastBranchId": 3,
+        "lastStatus": "arrived",
+        "updatedMs": 1767225632700,
+        "revision": 11,
+        "events": [
+          {
+            "sequence": 1,
+            "branchId": 25,
+            "branchName": "Branch 25",
+            "status": "accepted",
+            "occurredMs": 1767225625700
+          },
+          {
+            "sequence": 2,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "in_transit",
+            "occurredMs": 1767225626400
+          },
+          {
+            "sequence": 3,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "arrived",
+            "occurredMs": 1767225627100
+          },
+          {
+            "sequence": 4,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "in_transit",
+            "occurredMs": 1767225627800
+          },
+          {
+            "sequence": 5,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "arrived",
+            "occurredMs": 1767225628500
+          },
+          {
+            "sequence": 6,
+            "branchId": 22,
+            "branchName": "Branch 22",
+            "status": "in_transit",
+            "occurredMs": 1767225629200
+          },
+          {
+            "sequence": 7,
+            "branchId": 29,
+            "branchName": "Branch 29",
+            "status": "arrived",
+            "occurredMs": 1767225629900
+          },
+          {
+            "sequence": 8,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "in_transit",
+            "occurredMs": 1767225630600
+          },
+          {
+            "sequence": 9,
+            "branchId": 12,
+            "branchName": "Branch 12",
+            "status": "arrived",
+            "occurredMs": 1767225631300
+          },
+          {
+            "sequence": 10,
+            "branchId": 27,
+            "branchName": "Branch 27",
+            "status": "in_transit",
+            "occurredMs": 1767225632000
+          },
+          {
+            "sequence": 11,
+            "branchId": 3,
+            "branchName": "Branch 03",
+            "status": "arrived",
+            "occurredMs": 1767225632700
+          }
+        ]
+      },
+      "latest": {
+        "sequence": 11,
+        "branchId": 3,
+        "branchName": "Branch 03",
+        "status": "arrived",
+        "occurredMs": 1767225632700
+      },
+      "recent": [
+        {
+          "id": 92901,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728503000,
+          "revision": 15
+        },
+        {
+          "id": 16125,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728453000,
+          "revision": 17
+        },
+        {
+          "id": 63280,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728427000,
+          "revision": 12
+        },
+        {
+          "id": 32789,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728389000,
+          "revision": 9
+        },
+        {
+          "id": 22692,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728305000,
+          "revision": 20
+        },
+        {
+          "id": 30073,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728300000,
+          "revision": 17
+        },
+        {
+          "id": 61436,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728258000,
+          "revision": 18
+        },
+        {
+          "id": 4927,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728190000,
+          "revision": 19
+        },
+        {
+          "id": 50571,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728163000,
+          "revision": 11
+        },
+        {
+          "id": 48660,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728161000,
+          "revision": 18
+        },
+        {
+          "id": 34721,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728135000,
+          "revision": 9
+        },
+        {
+          "id": 98146,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728130000,
+          "revision": 15
+        },
+        {
+          "id": 89843,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728051000,
+          "revision": 13
+        },
+        {
+          "id": 94353,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728048000,
+          "revision": 20
+        },
+        {
+          "id": 26680,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728005000,
+          "revision": 10
+        },
+        {
+          "id": 99571,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769727852000,
+          "revision": 16
+        },
+        {
+          "id": 99356,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769727788000,
+          "revision": 13
+        },
+        {
+          "id": 20807,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769727783000,
+          "revision": 10
+        },
+        {
+          "id": 50589,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769727743000,
+          "revision": 20
+        },
+        {
+          "id": 16894,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769727712000,
+          "revision": 16
+        }
+      ]
+    },
+    {
+      "engine": "MongoDB",
+      "store": {
+        "version": "8.0.26",
+        "shipments": 100000,
+        "events": 1404449,
+        "bytes": 50728960,
+        "durability": "w=1; journal=true; retryWrites=false"
+      },
+      "timeline": {
+        "id": 1,
+        "lastBranchId": 3,
+        "lastStatus": "arrived",
+        "updatedMs": 1767225632700,
+        "revision": 11,
+        "events": [
+          {
+            "sequence": 1,
+            "branchId": 25,
+            "branchName": "Branch 25",
+            "status": "accepted",
+            "occurredMs": 1767225625700
+          },
+          {
+            "sequence": 2,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "in_transit",
+            "occurredMs": 1767225626400
+          },
+          {
+            "sequence": 3,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "arrived",
+            "occurredMs": 1767225627100
+          },
+          {
+            "sequence": 4,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "in_transit",
+            "occurredMs": 1767225627800
+          },
+          {
+            "sequence": 5,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "arrived",
+            "occurredMs": 1767225628500
+          },
+          {
+            "sequence": 6,
+            "branchId": 22,
+            "branchName": "Branch 22",
+            "status": "in_transit",
+            "occurredMs": 1767225629200
+          },
+          {
+            "sequence": 7,
+            "branchId": 29,
+            "branchName": "Branch 29",
+            "status": "arrived",
+            "occurredMs": 1767225629900
+          },
+          {
+            "sequence": 8,
+            "branchId": 1,
+            "branchName": "Branch 01",
+            "status": "in_transit",
+            "occurredMs": 1767225630600
+          },
+          {
+            "sequence": 9,
+            "branchId": 12,
+            "branchName": "Branch 12",
+            "status": "arrived",
+            "occurredMs": 1767225631300
+          },
+          {
+            "sequence": 10,
+            "branchId": 27,
+            "branchName": "Branch 27",
+            "status": "in_transit",
+            "occurredMs": 1767225632000
+          },
+          {
+            "sequence": 11,
+            "branchId": 3,
+            "branchName": "Branch 03",
+            "status": "arrived",
+            "occurredMs": 1767225632700
+          }
+        ]
+      },
+      "latest": {
+        "sequence": 11,
+        "branchId": 3,
+        "branchName": "Branch 03",
+        "status": "arrived",
+        "occurredMs": 1767225632700
+      },
+      "recent": [
+        {
+          "id": 92901,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728503000,
+          "revision": 15
+        },
+        {
+          "id": 16125,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728453000,
+          "revision": 17
+        },
+        {
+          "id": 63280,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728427000,
+          "revision": 12
+        },
+        {
+          "id": 32789,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728389000,
+          "revision": 9
+        },
+        {
+          "id": 22692,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728305000,
+          "revision": 20
+        },
+        {
+          "id": 30073,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728300000,
+          "revision": 17
+        },
+        {
+          "id": 61436,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728258000,
+          "revision": 18
+        },
+        {
+          "id": 4927,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728190000,
+          "revision": 19
+        },
+        {
+          "id": 50571,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728163000,
+          "revision": 11
+        },
+        {
+          "id": 48660,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728161000,
+          "revision": 18
+        },
+        {
+          "id": 34721,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728135000,
+          "revision": 9
+        },
+        {
+          "id": 98146,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728130000,
+          "revision": 15
+        },
+        {
+          "id": 89843,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769728051000,
+          "revision": 13
+        },
+        {
+          "id": 94353,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728048000,
+          "revision": 20
+        },
+        {
+          "id": 26680,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769728005000,
+          "revision": 10
+        },
+        {
+          "id": 99571,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769727852000,
+          "revision": 16
+        },
+        {
+          "id": 99356,
+          "lastBranchId": 3,
+          "lastStatus": "arrived",
+          "updatedMs": 1769727788000,
+          "revision": 13
+        },
+        {
+          "id": 20807,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769727783000,
+          "revision": 10
+        },
+        {
+          "id": 50589,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769727743000,
+          "revision": 20
+        },
+        {
+          "id": 16894,
+          "lastBranchId": 3,
+          "lastStatus": "in_transit",
+          "updatedMs": 1769727712000,
+          "revision": 16
+        }
+      ]
+    }
+  ]
+}

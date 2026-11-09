@@ -1,0 +1,74 @@
+{
+  "verifiedUtc": "2026-11-09T06:36:43.0304638Z",
+  "shipments": 512,
+  "branches": 32,
+  "before": {
+    "shipmentSamples": 65,
+    "branches": 32,
+    "stores": [
+      {
+        "engine": "PostgreSQL",
+        "store": {
+          "version": "18.2 (Debian 18.2-1.pgdg13\u002B1)",
+          "shipments": 512,
+          "events": 7053,
+          "bytes": 925696,
+          "durability": "fsync=on; synchronous_commit=on"
+        }
+      },
+      {
+        "engine": "MongoDB",
+        "store": {
+          "version": "8.0.26",
+          "shipments": 512,
+          "events": 7053,
+          "bytes": 204800,
+          "durability": "w=1; journal=true; retryWrites=false"
+        }
+      }
+    ]
+  },
+  "after": {
+    "shipmentSamples": 66,
+    "branches": 32,
+    "stores": [
+      {
+        "engine": "PostgreSQL",
+        "store": {
+          "version": "18.2 (Debian 18.2-1.pgdg13\u002B1)",
+          "shipments": 512,
+          "events": 7055,
+          "bytes": 933888,
+          "durability": "fsync=on; synchronous_commit=on"
+        }
+      },
+      {
+        "engine": "MongoDB",
+        "store": {
+          "version": "8.0.26",
+          "shipments": 512,
+          "events": 7055,
+          "bytes": 380928,
+          "durability": "w=1; journal=true; retryWrites=false"
+        }
+      }
+    ]
+  },
+  "cases": [
+    "initial counts",
+    "timeline",
+    "latest scan",
+    "recent branch results",
+    "missing shipment",
+    "unknown branch",
+    "invalid sequence",
+    "non-increasing timestamp",
+    "invalid branch ID",
+    "invalid branch name",
+    "invalid status",
+    "valid append",
+    "stale revision",
+    "concurrent append",
+    "post-write event counts"
+  ]
+}

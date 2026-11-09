@@ -1,0 +1,377 @@
+Timeline
+{
+  "explainVersion" : "1",
+  "queryPlanner" : {
+    "namespace" : "postsystem_nosql.shipments",
+    "parsedQuery" : {
+      "_id" : {
+        "$eq" : 50000
+      }
+    },
+    "indexFilterSet" : false,
+    "queryHash" : "9B5DE45B",
+    "planCacheShapeHash" : "9B5DE45B",
+    "planCacheKey" : "6E5A1F82",
+    "optimizationTimeMillis" : 0,
+    "maxIndexedOrSolutionsReached" : false,
+    "maxIndexedAndSolutionsReached" : false,
+    "maxScansToExplodeReached" : false,
+    "prunedSimilarIndexes" : false,
+    "winningPlan" : {
+      "isCached" : false,
+      "stage" : "EXPRESS_IXSCAN",
+      "keyPattern" : "{ _id: 1 }",
+      "indexName" : "_id_"
+    },
+    "rejectedPlans" : []
+  },
+  "executionStats" : {
+    "executionSuccess" : true,
+    "nReturned" : 1,
+    "executionTimeMillis" : 0,
+    "totalKeysExamined" : 1,
+    "totalDocsExamined" : 1,
+    "executionStages" : {
+      "isCached" : false,
+      "stage" : "EXPRESS_IXSCAN",
+      "keyPattern" : "{ _id: 1 }",
+      "indexName" : "_id_",
+      "keysExamined" : 1,
+      "docsExamined" : 1,
+      "nReturned" : 1
+    }
+  },
+  "command" : {
+    "find" : "shipments",
+    "filter" : {
+      "_id" : 50000
+    },
+    "limit" : 1,
+    "$db" : "postsystem_nosql"
+  },
+  "serverInfo" : {
+    "host" : "d6361ebed903",
+    "port" : 27017,
+    "version" : "8.0.26",
+    "gitVersion" : "a2c24805265db119cc39f2f54e067b4294a4ddd2"
+  },
+  "serverParameters" : {
+    "internalQueryFacetBufferSizeBytes" : 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes" : 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes" : 104857600,
+    "internalDocumentSourceGroupMaxMemoryBytes" : 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes" : 104857600,
+    "internalQueryProhibitBlockingMergeOnMongoS" : 0,
+    "internalQueryMaxAddToSetBytes" : 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes" : 104857600,
+    "internalQueryFrameworkControl" : "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex" : 1
+  },
+  "ok" : 1.0
+}
+
+Latest
+{
+  "explainVersion" : "1",
+  "queryPlanner" : {
+    "namespace" : "postsystem_nosql.shipments",
+    "parsedQuery" : {
+      "_id" : {
+        "$eq" : 50000
+      }
+    },
+    "indexFilterSet" : false,
+    "queryHash" : "9B5DE45B",
+    "planCacheShapeHash" : "9B5DE45B",
+    "planCacheKey" : "6E5A1F82",
+    "optimizationTimeMillis" : 0,
+    "maxIndexedOrSolutionsReached" : false,
+    "maxIndexedAndSolutionsReached" : false,
+    "maxScansToExplodeReached" : false,
+    "prunedSimilarIndexes" : false,
+    "winningPlan" : {
+      "isCached" : false,
+      "stage" : "PROJECTION_DEFAULT",
+      "transformBy" : {
+        "_id" : 0,
+        "last_branch_id" : 0,
+        "last_status" : 0,
+        "updated_ms" : 0,
+        "revision" : 0,
+        "events" : {
+          "$slice" : -1
+        }
+      },
+      "inputStage" : {
+        "stage" : "IDHACK"
+      }
+    },
+    "rejectedPlans" : []
+  },
+  "executionStats" : {
+    "executionSuccess" : true,
+    "nReturned" : 1,
+    "executionTimeMillis" : 0,
+    "totalKeysExamined" : 1,
+    "totalDocsExamined" : 1,
+    "executionStages" : {
+      "isCached" : false,
+      "stage" : "PROJECTION_DEFAULT",
+      "nReturned" : 1,
+      "executionTimeMillisEstimate" : 0,
+      "works" : 2,
+      "advanced" : 1,
+      "needTime" : 0,
+      "needYield" : 0,
+      "saveState" : 0,
+      "restoreState" : 0,
+      "isEOF" : 1,
+      "transformBy" : {
+        "_id" : 0,
+        "last_branch_id" : 0,
+        "last_status" : 0,
+        "updated_ms" : 0,
+        "revision" : 0,
+        "events" : {
+          "$slice" : -1
+        }
+      },
+      "inputStage" : {
+        "stage" : "IDHACK",
+        "nReturned" : 1,
+        "executionTimeMillisEstimate" : 0,
+        "works" : 2,
+        "advanced" : 1,
+        "needTime" : 0,
+        "needYield" : 0,
+        "saveState" : 0,
+        "restoreState" : 0,
+        "isEOF" : 1,
+        "keysExamined" : 1,
+        "docsExamined" : 1
+      }
+    }
+  },
+  "command" : {
+    "find" : "shipments",
+    "filter" : {
+      "_id" : 50000
+    },
+    "limit" : 1,
+    "projection" : {
+      "_id" : 0,
+      "last_branch_id" : 0,
+      "last_status" : 0,
+      "updated_ms" : 0,
+      "revision" : 0,
+      "events" : {
+        "$slice" : -1
+      }
+    },
+    "$db" : "postsystem_nosql"
+  },
+  "serverInfo" : {
+    "host" : "d6361ebed903",
+    "port" : 27017,
+    "version" : "8.0.26",
+    "gitVersion" : "a2c24805265db119cc39f2f54e067b4294a4ddd2"
+  },
+  "serverParameters" : {
+    "internalQueryFacetBufferSizeBytes" : 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes" : 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes" : 104857600,
+    "internalDocumentSourceGroupMaxMemoryBytes" : 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes" : 104857600,
+    "internalQueryProhibitBlockingMergeOnMongoS" : 0,
+    "internalQueryMaxAddToSetBytes" : 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes" : 104857600,
+    "internalQueryFrameworkControl" : "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex" : 1
+  },
+  "ok" : 1.0
+}
+
+Recent
+{
+  "explainVersion" : "1",
+  "queryPlanner" : {
+    "namespace" : "postsystem_nosql.shipments",
+    "parsedQuery" : {
+      "last_branch_id" : {
+        "$eq" : 1
+      }
+    },
+    "indexFilterSet" : false,
+    "queryHash" : "3DF17AA0",
+    "planCacheShapeHash" : "3DF17AA0",
+    "planCacheKey" : "C67D7482",
+    "optimizationTimeMillis" : 0,
+    "maxIndexedOrSolutionsReached" : false,
+    "maxIndexedAndSolutionsReached" : false,
+    "maxScansToExplodeReached" : false,
+    "prunedSimilarIndexes" : false,
+    "winningPlan" : {
+      "isCached" : false,
+      "stage" : "LIMIT",
+      "limitAmount" : 20,
+      "inputStage" : {
+        "stage" : "PROJECTION_SIMPLE",
+        "transformBy" : {
+          "events" : 0
+        },
+        "inputStage" : {
+          "stage" : "FETCH",
+          "inputStage" : {
+            "stage" : "IXSCAN",
+            "keyPattern" : {
+              "last_branch_id" : 1,
+              "updated_ms" : -1,
+              "_id" : 1
+            },
+            "indexName" : "shipments_branch_updated_idx",
+            "isMultiKey" : false,
+            "multiKeyPaths" : {
+              "last_branch_id" : [],
+              "updated_ms" : [],
+              "_id" : []
+            },
+            "isUnique" : false,
+            "isSparse" : false,
+            "isPartial" : false,
+            "indexVersion" : 2,
+            "direction" : "forward",
+            "indexBounds" : {
+              "last_branch_id" : ["[1, 1]"],
+              "updated_ms" : ["[MaxKey, MinKey]"],
+              "_id" : ["[MinKey, MaxKey]"]
+            }
+          }
+        }
+      }
+    },
+    "rejectedPlans" : []
+  },
+  "executionStats" : {
+    "executionSuccess" : true,
+    "nReturned" : 20,
+    "executionTimeMillis" : 0,
+    "totalKeysExamined" : 20,
+    "totalDocsExamined" : 20,
+    "executionStages" : {
+      "isCached" : false,
+      "stage" : "LIMIT",
+      "nReturned" : 20,
+      "executionTimeMillisEstimate" : 0,
+      "works" : 21,
+      "advanced" : 20,
+      "needTime" : 0,
+      "needYield" : 0,
+      "saveState" : 0,
+      "restoreState" : 0,
+      "isEOF" : 1,
+      "limitAmount" : 20,
+      "inputStage" : {
+        "stage" : "PROJECTION_SIMPLE",
+        "nReturned" : 20,
+        "executionTimeMillisEstimate" : 0,
+        "works" : 20,
+        "advanced" : 20,
+        "needTime" : 0,
+        "needYield" : 0,
+        "saveState" : 0,
+        "restoreState" : 0,
+        "isEOF" : 0,
+        "transformBy" : {
+          "events" : 0
+        },
+        "inputStage" : {
+          "stage" : "FETCH",
+          "nReturned" : 20,
+          "executionTimeMillisEstimate" : 0,
+          "works" : 20,
+          "advanced" : 20,
+          "needTime" : 0,
+          "needYield" : 0,
+          "saveState" : 0,
+          "restoreState" : 0,
+          "isEOF" : 0,
+          "docsExamined" : 20,
+          "alreadyHasObj" : 0,
+          "inputStage" : {
+            "stage" : "IXSCAN",
+            "nReturned" : 20,
+            "executionTimeMillisEstimate" : 0,
+            "works" : 20,
+            "advanced" : 20,
+            "needTime" : 0,
+            "needYield" : 0,
+            "saveState" : 0,
+            "restoreState" : 0,
+            "isEOF" : 0,
+            "keyPattern" : {
+              "last_branch_id" : 1,
+              "updated_ms" : -1,
+              "_id" : 1
+            },
+            "indexName" : "shipments_branch_updated_idx",
+            "isMultiKey" : false,
+            "multiKeyPaths" : {
+              "last_branch_id" : [],
+              "updated_ms" : [],
+              "_id" : []
+            },
+            "isUnique" : false,
+            "isSparse" : false,
+            "isPartial" : false,
+            "indexVersion" : 2,
+            "direction" : "forward",
+            "indexBounds" : {
+              "last_branch_id" : ["[1, 1]"],
+              "updated_ms" : ["[MaxKey, MinKey]"],
+              "_id" : ["[MinKey, MaxKey]"]
+            },
+            "keysExamined" : 20,
+            "seeks" : 1,
+            "dupsTested" : 0,
+            "dupsDropped" : 0
+          }
+        }
+      }
+    }
+  },
+  "queryShapeHash" : "A84AD4E2AE39146D2F746DE2C3A367B85F73432CE830390DD7BA73E78E65A6FF",
+  "command" : {
+    "find" : "shipments",
+    "filter" : {
+      "last_branch_id" : 1
+    },
+    "limit" : 20,
+    "projection" : {
+      "events" : 0
+    },
+    "sort" : {
+      "updated_ms" : -1,
+      "_id" : 1
+    },
+    "$db" : "postsystem_nosql"
+  },
+  "serverInfo" : {
+    "host" : "d6361ebed903",
+    "port" : 27017,
+    "version" : "8.0.26",
+    "gitVersion" : "a2c24805265db119cc39f2f54e067b4294a4ddd2"
+  },
+  "serverParameters" : {
+    "internalQueryFacetBufferSizeBytes" : 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes" : 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes" : 104857600,
+    "internalDocumentSourceGroupMaxMemoryBytes" : 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes" : 104857600,
+    "internalQueryProhibitBlockingMergeOnMongoS" : 0,
+    "internalQueryMaxAddToSetBytes" : 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes" : 104857600,
+    "internalQueryFrameworkControl" : "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex" : 1
+  },
+  "ok" : 1.0
+}
