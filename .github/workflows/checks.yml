@@ -1,0 +1,27 @@
+name: Database checks
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      POSTAL_PG: Host=127.0.0.1;Port=55432;Database=postsystem_nosql;Username=postal;Password=postal_lab
+      POSTAL_MONGO: mongodb://postal:postal_lab@127.0.0.1:57017/?authSource=admin&directConnection=true
+      POSTAL_MONGO_DB: postsystem_nosql
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+      - run: docker compose up -d --wait
+      - run: dotnet restore src/PostalTracking.csproj --locked-mode
+      - run: dotnet build src/PostalTracking.csproj -c Release --no-restore
+      - run: dotnet run --project src/PostalTracking.csproj -c Release --no-build -- verify results/ci
+      - run: sh redis/demo.sh
+      - if: always()
+        run: docker compose down
