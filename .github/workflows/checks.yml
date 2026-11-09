@@ -23,5 +23,7 @@ jobs:
       - run: dotnet build src/PostalTracking.csproj -c Release --no-restore
       - run: dotnet run --project src/PostalTracking.csproj -c Release --no-build -- verify results/ci
       - run: sh redis/demo.sh
+      - if: failure()
+        run: docker compose logs --no-color --tail=80
       - if: always()
         run: docker compose down
